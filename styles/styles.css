@@ -54,12 +54,14 @@ main{
 }
 .button{
     background-color: #91FF9900;
-    color: #1E3F20;
-    text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+}
+.button a{
+    color: #1E3F20;
+    text-decoration: none;
 }
 
 .button:hover{
