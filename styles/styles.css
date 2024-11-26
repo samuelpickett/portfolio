@@ -54,25 +54,32 @@ main{
 }
 .profile{
     grid-column: 2/3;
+    display: grid;
     place-items: center;
 }
+
 .profile img{
-    width: 100%;
+    padding-top: 00px;
+    width: 40%
 }
 .button{
+    color: #1E3F20;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
+.button-box{
     background-color: #91FF9900;
+    color: #1E3F20;
+    text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 25px;
     border-radius: 5px;
     border: 0px;
 }
-.button a{
-    color: #1E3F20;
-    text-decoration: none;
-}
 
-.button a:hover{
+.button:hover{
     background-color: #1E3F20;
     color: #91FF99;
 }
@@ -97,7 +104,8 @@ footer a{
     background-color: #1E3F20;
     color: #91FF99;
     height: 30px;
-    
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 footer p{
