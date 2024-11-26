@@ -62,7 +62,7 @@ main{
     padding-top: 50px;
     width: 40%
 }
-.button-box{
+.button{
     background-color: #91FF9900;
     color: #1E3F20;
     text-decoration: none;
@@ -72,15 +72,12 @@ main{
     border-radius: 5px;
     border: 0px;
 }
-.more{
-    color: #1E3F20;
-    text-decoration: none;
+.button-box{
     padding: 15px 30px;
-    border-radius: 5px;
+    margin-top: 25px;
 }
 
-
-.more:hover{
+.button:hover{
     background-color: #1E3F20;
     color: #91FF99;
 }
