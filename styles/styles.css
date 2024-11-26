@@ -32,13 +32,15 @@ header img{
     width: 100px;
 }
 
-/* Styles for the body */
-main{
+/* Styles for the main area */
+body{
     background-color: #9DBF9F;
     font-family: 'Lato', arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
+}
+main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
