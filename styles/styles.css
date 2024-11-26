@@ -3,7 +3,7 @@
 /* Styles for the header */
 header{
     background-color: #91FF99;
-    font-family: 'Merriweather', Arial, sans-serif;
+    font-family: 'Lato', Arial, sans-serif;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
@@ -17,7 +17,7 @@ nav a{
     color: #1E3F20;
     text-decoration: none;
     padding: 35px;
-    font-family: Lato, arial;
+    font-family: 'Lato', arial;
 }
 nav a:hover{
     background-color: #1E3F20;
@@ -35,16 +35,19 @@ header img{
 /* Styles for the body */
 body{
     background-color: #9DBF9F;
-    font-family: 'Oswald', Arial, sans-serif;
+    font-family: 'Lato', arial, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
     color: #1E3F20;
+    font-family: 'Lato', arial, sans-serif;
     padding: 25px 50px;
     margin-top: 200px;
     display: flex;
