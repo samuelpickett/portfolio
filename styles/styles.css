@@ -70,7 +70,7 @@ main{
     text-decoration: none;
 }
 
-.button:hover{
+.button a:hover{
     background-color: #1E3F20;
     color: #91FF99;
 }
