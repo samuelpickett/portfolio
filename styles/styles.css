@@ -46,6 +46,7 @@ main{
 }
 .personal_info{
     grid-column: 1/2;
+    text-align: center;
 }
 .profile{
     grid-column: 2/3;
