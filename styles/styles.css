@@ -62,12 +62,6 @@ main{
     padding-top: 50px;
     width: 40%
 }
-.button{
-    color: #1E3F20;
-    text-decoration: none;
-    padding: 15px 30px;
-    border-radius: 5px;
-}
 .button-box{
     background-color: #91FF9900;
     color: #1E3F20;
@@ -78,8 +72,15 @@ main{
     border-radius: 5px;
     border: 0px;
 }
+.more{
+    color: #1E3F20;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+}
 
-.button:hover{
+
+.more:hover{
     background-color: #1E3F20;
     color: #91FF99;
 }
