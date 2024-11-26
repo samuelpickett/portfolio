@@ -64,6 +64,7 @@ main{
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+    border: 0px;
 }
 .button a{
     color: #1E3F20;
