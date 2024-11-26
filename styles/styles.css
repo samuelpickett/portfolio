@@ -49,6 +49,7 @@ main{
 }
 .profile{
     grid-column: 2/3;
+    place-items: center/center;
 }
 .button{
     background-color: #91FF99;
