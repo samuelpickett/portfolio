@@ -47,6 +47,7 @@ main{
 .personal_info{
     grid-column: 1/2;
     text-align: center;
+    color: #1E3F20
 }
 .personal_info p{
     font-family: 'Montserrat', arial, sans-serif;
@@ -62,7 +63,7 @@ main{
     background-color: #91FF9900;
     font-size: 18px;
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 25px;
     border-radius: 5px;
     border: 0px;
 }
