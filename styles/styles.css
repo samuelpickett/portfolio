@@ -50,7 +50,10 @@ main{
 }
 .profile{
     grid-column: 2/3;
-    place-items: center/center;
+    place-items: center;
+}
+.profile img{
+    width: 100%;
 }
 .button{
     background-color: #91FF9900;
