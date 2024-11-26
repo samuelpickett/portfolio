@@ -42,7 +42,12 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+.personal_info{
+    grid-column: 1/2;
+}
+.profile{
+    grid-column: 2/3;
+}
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
