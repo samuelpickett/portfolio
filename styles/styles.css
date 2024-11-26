@@ -48,6 +48,9 @@ main{
     grid-column: 1/2;
     text-align: center;
 }
+.personal_info p{
+    font-family: 'Montserrat', arial, sans-serif;
+}
 .profile{
     grid-column: 2/3;
     place-items: center;
