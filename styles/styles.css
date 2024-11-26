@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Styles for the header */
+header{
+    background-color: #91FF99;
+    font-family: 'Merriweather', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+nav a{
+    text-align: center;
+    color: #1E3F20;
+    text-decoration: none;
+    padding: 35px;
+    font-family: Lato, arial;
+}
+nav a:hover{
+    background-color: #1E3F20;
+    color: #91FF99;
+    height: 30px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+}
+header img{
+    width: 100px;
+}
+
+/* Styles for the body */
+body{
+    background-color: #9DBF9F;
+    font-family: 'Oswald', Arial, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for the footer */
+footer{
+    background-color: #91FF99; 
+    color: #1E3F20;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer a{
+    color: #1E3F20;
+    text-decoration: none;
+}
+
+.site-plan:hover{
+    background-color: #1E3F20;
+    color: #91FF99;
+    height: 30px;
+    
+}
+
+footer p{
+    font-size: 1.25em;
+}
+
+footer img{
+    width: 200px
+}
+footer .social img{
+    padding-right: 50px;
+    width: 100px
+}
+
