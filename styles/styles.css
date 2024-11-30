@@ -51,6 +51,7 @@ main{
 }
 .personal_info p{
     font-family: 'Montserrat', arial, sans-serif;
+    padding-left: 50px;
 }
 .profile{
     grid-column: 2/3;
