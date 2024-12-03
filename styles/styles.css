@@ -51,6 +51,7 @@ main{
 }
 .personal_info p{
     font-family: 'Montserrat', arial, sans-serif;
+    padding-left: 25px;
 }
 .profile{
     grid-column: 2/3;
@@ -60,7 +61,7 @@ main{
 
 .profile img{
     padding-top: 50px;
-    width: 40%
+    width: 50%
 }
 .button{
     background-color: #91FF9900;
