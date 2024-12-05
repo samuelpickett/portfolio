@@ -131,6 +131,10 @@ body{
     padding: 0 25px;
 }
 
+.extra img{
+    width: 100%;
+}
+
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
