@@ -112,6 +112,12 @@ body{
     width: 80%;
 }
 
+
+/* Styles for skills page */
+.skills{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
