@@ -120,6 +120,7 @@ body{
 .skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 25px
 }
 /* Styles for the footer */
 footer{
