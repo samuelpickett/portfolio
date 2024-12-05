@@ -114,6 +114,9 @@ body{
 
 
 /* Styles for skills page */
+.skillsandprojects h1{
+    text-align: center;
+}
 .skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
