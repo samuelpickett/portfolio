@@ -126,15 +126,18 @@ body{
 .extra{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 25% 25%;
     grid-gap: 25px;
-    padding: 0 25px;
+    padding: 0 50px;
 }
 
 .extra img{
     width: 100%;
 }
 
+.computing h1{
+    padding-bottom: 50px;
+}
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
