@@ -40,7 +40,8 @@ body{
     margin: 0;
     padding: 0;
 }
-main{
+/* Styles for index main body */
+.main{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -82,6 +83,34 @@ main{
     background-color: #1E3F20;
     color: #91FF99;
 }
+
+/* Styles for experience page */
+.experience h1{
+    text-align: center;
+}
+
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 0 25px;
+}
+.missionary img{
+    width: 100%;
+}
+.lunchroom h1{
+    padding-bottom: 50px;
+}
+.school{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    padding: 0 25px;
+}
+.byui img{
+    width: 80%;
+}
+
 /* Styles for the footer */
 footer{
     background-color: #91FF99; 
