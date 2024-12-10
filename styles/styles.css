@@ -114,29 +114,46 @@ body{
 
 
 /* Styles for skills page */
-.skillsandprojects h1{
+.skillsandprojects{
     text-align: center;
 }
 .skills{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 25px
+    padding-left: 50px;
+    text-align: left;
 }
 
 .extra{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 25% 25%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     grid-gap: 25px;
     padding: 0 50px;
 }
 
-.extra img{
-    width: 100%;
+.projects{
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: .5fr .5fr;
+    grid-gap: 25px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 50px;
+
 }
 
-.computing h1{
-    padding-bottom: 50px;
+.projects img{
+    width: 50%;
+}
+
+.building{
+    grid-row: 2/3;
+}
+
+.comp{
+    grid-row: 2/3;
+    grid-column: 2/3;
 }
 /* Styles for the footer */
 footer{
