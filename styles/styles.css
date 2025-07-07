@@ -1,38 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-/* Styles for the header */
+main{
+    width: 100%;
+}
 header{
     background-color: #91FF99;
     font-family: 'Lato', Arial, sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     height: 100px;
 }
 nav{
+    /* padding: 0 20px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
 }
 nav a{
     text-align: center;
     color: #1E3F20;
     text-decoration: none;
-    padding: 35px;
+    padding: 0 20px;
     font-family: 'Lato', arial;
 }
-nav a:hover{
-    background-color: #1E3F20;
-    color: #91FF99;
-    height: 30px;
-}
-.logo{
-    display: flex;
-    justify-content: space-around;
-}
+
 header img{
     width: 100px;
 }
 
-/* Styles for the main area */
+
 body{
     background-color: #9DBF9F;
     color: #1E3F20;
@@ -41,6 +34,78 @@ body{
     margin: 0;
     padding: 0;
 }
+main{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+
+}
+.profile img{
+    padding-top: 50px;
+}
+
+.button{
+    background-color: #91FF9900;
+    color: #1E3F20;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px 30px;
+
+}
+
+
+.experience, .skills, .extra{
+    padding: 0 10px ;
+}
+
+/* Footer Styles */
+
+footer{
+    background-color: #91FF99; 
+    color: #1E3F20;
+    font-family: 'Lato', arial, sans-serif;
+    padding: 25px 50px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer a{
+    color: #1E3F20;
+    text-decoration: none;
+}
+.footer_img{
+    display: none;
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social img{
+    padding: 25px;
+    padding-bottom: 0;
+    width: 50px
+}
+
+@media screen and (min-width:600px){
+    /* Styles for the header */
+    nav{
+        justify-content: space-evenly;
+    }
+    .link:hover{
+    background-color: #1E3F20;
+    color: #91FF99;
+    padding: 25px 20px;
+    border-radius: 5px; 
+    }
+
+/* Styles for the main area */
+
 /* Styles for index main body */
 .main{
     display: grid;
@@ -48,6 +113,8 @@ body{
 }
 .personal_info{
     grid-column: 1/2;
+    grid-row: 1/2;
+    padding-top: 25px;
     text-align: center;
     color: #1E3F20
 }
@@ -58,24 +125,16 @@ body{
 .profile{
     grid-column: 2/3;
     display: grid;
-    place-items: center;
+    place-items: left;
+}
+.profile img{
+    width: 50%;
+    padding-left: 100px;
 }
 
-.profile img{
-    padding-top: 50px;
-    width: 50%
-}
-.button{
-    background-color: #91FF9900;
-    color: #1E3F20;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 15px 30px;
-    margin-top: 25px;
-    border-radius: 5px;
-    border: 0px;
-}
 .button-box{
+    display: flex;
+    justify-content: center;
     padding: 15px 30px;
     margin-top: 50px;
 }
@@ -83,33 +142,7 @@ body{
 .button:hover{
     background-color: #1E3F20;
     color: #91FF99;
-}
-
-/* Styles for experience page */
-.experience h1{
-    text-align: center;
-}
-
-.work{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
-    padding: 0 25px;
-}
-.missionary img{
-    width: 100%;
-}
-.lunchroom h1{
-    padding-bottom: 50px;
-}
-.school{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
-    padding: 0 25px;
-}
-.byui img{
-    width: 80%;
+    border-radius: 5px;
 }
 
 
@@ -124,67 +157,41 @@ body{
     text-align: left;
 }
 
-.extra{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 25px;
-    padding: 0 50px;
-}
-
-.projects{
-    display: grid;
-    grid-template-columns: .5fr .5fr;
-    grid-template-rows: .5fr .5fr;
-    grid-gap: 25px;
-    align-items: center;
-    justify-items: center;
-    padding-left: 50px;
-
-}
-
-.projects img{
-    width: 50%;
-}
-
-.building{
-    grid-row: 2/3;
-}
-
-.comp{
-    grid-row: 2/3;
-    grid-column: 2/3;
-}
-/* Styles for the footer */
-footer{
-    background-color: #91FF99; 
-    color: #1E3F20;
-    font-family: 'Lato', arial, sans-serif;
-    padding: 25px 50px;
-    margin-top: 200px;
+.extra, .work, .schooling, .extra_container, .projects{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.job, .school, .extra, .project{
+    flex: 0 1 750px;
+}
+.extra{
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Styles for the footer */
+
+
+.footer_img{
+    display: block;
+    width: 100px;
+}
+footer{
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-
-footer a{
-    color: #1E3F20;
-    text-decoration: none;
+footer p, .site-plan{
+    padding: 0 20px
 }
-
 .site-plan:hover{
     background-color: #1E3F20;
     color: #91FF99;
     height: 30px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     border-radius: 5px;
 }
 
-footer img{
-    width: 150px
 }
-footer .social img{
-    padding-right: 50px;
-    width: 100px
-}
-
