@@ -130,6 +130,7 @@ footer a{
 .profile img{
     width: 50%;
     padding-left: 100px;
+    align-self: center;
 }
 
 .button-box{
@@ -179,6 +180,9 @@ footer a{
     width: 100px;
 }
 footer{
+    position: fixed;
+    bottom: 0;
+    width: 95%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
