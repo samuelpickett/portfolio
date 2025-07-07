@@ -106,10 +106,12 @@ footer a{
 
 /* Styles for the main area */
 
+
 /* Styles for index main body */
 .main{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    height: 625px;
 }
 .personal_info{
     grid-column: 1/2;
@@ -180,9 +182,6 @@ footer a{
     width: 100px;
 }
 footer{
-    position: fixed;
-    bottom: 0;
-    width: 95%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
