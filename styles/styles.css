@@ -57,6 +57,30 @@ img{
 
 }
 
+.skills.hide{
+    display: none;
+}
+
+.skills_button{
+    background-color: #91FF9900;
+    color: #1E3F20;
+    border-color: #91FF9900;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    font-size: 18px;
+    padding: 15px 30px;
+    /* width: 200px; */
+
+}
+.skills_button:hover{
+    background-color: #1E3F20;
+    color: #91FF99;
+    padding: 15px 0;
+    border-radius: 5px; 
+
+}
+
 
 .experience, .skills, .extra{
     padding: 0 10px ;
@@ -150,17 +174,20 @@ footer a{
 
 
 /* Styles for skills page */
-.skillsandprojects{
+.extraandprojects{
     text-align: center;
 }
 .skills{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding-left: 50px;
-    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
+.skills li{
+    padding-bottom: 10px;
+    padding-right: 30px;
 
-.extra, .work, .schooling, .extra_container, .projects{
+}
+.work, .schooling, .extra_container, .projects{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
