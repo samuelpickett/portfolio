@@ -233,11 +233,11 @@ function hideSkills(e){
 
 const currentPath = window.location.pathname;
 
-if (currentPath === "/portfolio/experience.html"){
+if (currentPath === "/portfolio/experience.html" || currentPath === "/experience.html"){
     document.querySelector(".work").innerHTML += job_to_html(jobs);
     document.querySelector(".schooling").innerHTML += school_to_html(school);
 }
-if (currentPath === "/portfolio/skills.html"){
+if (currentPath === "/portfolio/skills.html" || currentPath === "/skills.html"){
 document.querySelector(".extra_container").innerHTML += extra_to_html(extracurriculars);
 document.querySelector(".projects").innerHTML += project_to_html(projects);
 }
