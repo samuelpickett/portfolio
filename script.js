@@ -150,8 +150,8 @@ function job_to_html(list_of_jobs){
                     ${pic}
                     <h2>From ${job.start_period.toLocaleString("default", {month: 'long'})} ${job.start_period.getFullYear()} to ${job.end_period.toLocaleString("default", {month: 'long'})} ${job.end_period.getFullYear()} in ${job.location}</h2>
                     <p>${job.description}</p>
-                    <p>Skills Learned</p>
-                    <ul class="skills">${skills_to_html(job.skills)}</ul>
+                    <button class="skills_button">Skills Learned</button>
+                    <ul class="skills hide">${skills_to_html(job.skills)}</ul>
                 </div>`
     });
     return html;
@@ -173,9 +173,9 @@ function school_to_html(list_of_schools){
                     ${pic}
                     <h2>From ${school.start_period.toLocaleString("default", {month: 'long'})} ${school.start_period.getFullYear()} to ${school.end_period.toLocaleString("default", {month: 'long'})} ${school.end_period.getFullYear()} in ${school.location}</h2>
                     <p>Degrees and Certificates</p>
-                    <ul class="skills">${skills_to_html(school.degrees)}</ul>
-                    <p>Skills Learned</p>
-                    <ul class="skills">${skills_to_html(school.skills)}</ul>
+                    <ul class="degrees">${skills_to_html(school.degrees)}</ul>
+                    <button class="skills_button">Skills Learned</button>
+                    <ul class="skills hide">${skills_to_html(school.skills)}</ul>
                 </div>`
     });
     return html;
@@ -218,8 +218,8 @@ function project_to_html(list_of_projects){
                     <h1>${project.title}</h1>
                     <p>${project.description}</p>
                     ${pic}
-                    <p>Skills Learned</p>
-                    <ul class="skills">${skills_to_html(project.skills)}</ul>
+                    <button class="skills_button">Skills Learned</button>
+                    <ul class="skills hide">${skills_to_html(project.skills)}</ul>
 
                 </div>`
     });
@@ -227,8 +227,8 @@ function project_to_html(list_of_projects){
 }
 
 function hideSkills(e){
-    const hide_skills = e.target.closest(".hide");
-    console.log(hide_skills)
+    const to_toggle = e.target.closest(".extra, .project, .job, .school").querySelector(".skills")
+    to_toggle.classList.toggle("hide")
 };
 
 const currentPath = window.location.pathname;
@@ -237,10 +237,11 @@ if (currentPath === "/experience.html"){
     document.querySelector(".work").innerHTML += job_to_html(jobs);
     document.querySelector(".schooling").innerHTML += school_to_html(school);
 }
-else if (currentPath === "/skills.html"){
+if (currentPath === "/skills.html"){
 document.querySelector(".extra_container").innerHTML += extra_to_html(extracurriculars);
 document.querySelector(".projects").innerHTML += project_to_html(projects);
 }
+
 const skills_to_hide = document.querySelectorAll(".skills_button");
 skills_to_hide.forEach(skill => {
     skill.addEventListener("click", hideSkills)

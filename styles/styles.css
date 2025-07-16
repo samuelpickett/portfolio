@@ -66,12 +66,9 @@ img{
     color: #1E3F20;
     border-color: #91FF9900;
     text-decoration: none;
-    display: flex;
-    justify-content: center;
-    font-size: 18px;
+    font-size: 20px;
+    margin-top: 10px;
     padding: 15px 30px;
-    /* width: 200px; */
-
 }
 .skills_button:hover{
     background-color: #1E3F20;
@@ -82,7 +79,7 @@ img{
 }
 
 
-.experience, .skills, .extra{
+.experience, .skills, .extra, .degrees{
     padding: 0 10px ;
 }
 
@@ -177,12 +174,12 @@ footer a{
 .extraandprojects{
     text-align: center;
 }
-.skills{
+.skills, .degrees{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.skills li{
+.skills li, .degrees li{
     padding-bottom: 10px;
     padding-right: 30px;
 
@@ -194,6 +191,8 @@ footer a{
 }
 .job, .school, .extra, .project{
     flex: 0 1 750px;
+    display: flex;
+    flex-direction: column;
 }
 .extra{
     display: flex;
@@ -214,13 +213,12 @@ footer{
     align-items: center;
 }
 footer p, .site-plan{
-    padding: 0 20px
+    padding: 0 20px;
 }
 .site-plan:hover{
     background-color: #1E3F20;
     color: #91FF99;
-    height: 30px;
-    padding: 15px 20px;
+    padding: 20px;
     border-radius: 5px;
 }
 
