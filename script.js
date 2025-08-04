@@ -1,5 +1,25 @@
 jobs = [
     {
+        title: "IT Tech",
+        start_period: new Date("2024", "11"),
+        end_period: new Date(),
+        location: "Rexburg, ID",
+        description: "Collaborated with a team of other techs to resolve technical issues in BYU-I's classrooms. Maintained and replaced hundreds of projectors, monitors, speakers, Crestron touchpanels, and control systems. Maintained and updated spreadsheets that listed the technical specs of each room on campus.",
+        picture: "",
+        alt: "",
+        skills: ["IT Skills", "Team Collaborator", "Hard Worker", "Organizing"]
+    },
+    {
+        title: "Student Sound Tech",
+        start_period: new Date("2024", "11"),
+        end_period: new Date("2025", "2"),
+        location: "Rexburg, ID",
+        description: "Worked on a team to provide audio during events at BYU-Idaho. Set up and took down audio equipment for 3-5 events per week. Learned how to set up and use a mixer.",
+        picture: "",
+        alt: "",
+        skills: ["Audio Tech", "Team Collaborator", "Hard Worker"]
+    },
+    {
         title: "Missionary for the Church of Jesus Christ of Latter-Day Saints",
         start_period: new Date("2022", "7"),
         end_period: new Date("2024", "7"),
