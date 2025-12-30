@@ -145,7 +145,6 @@ function get_date_difference(date1, date2){
     return Math.floor(diffDays);
 }
 
-
 function skills_to_html(list_of_skills){
     let html = "";
     list_of_skills.forEach(element => {

@@ -78,6 +78,10 @@ img{
 
 }
 
+.skills li{
+    list-style-position: inside;
+}
+
 
 .experience, .skills, .extra, .degrees{
     padding: 0 10px ;
@@ -184,6 +188,7 @@ footer a{
     padding-right: 30px;
 
 }
+
 .work, .schooling, .extra_container, .projects{
     display: flex;
     flex-wrap: wrap;
