@@ -1,7 +1,7 @@
 jobs = [
     {
         title: "IT Tech",
-        start_period: new Date("2024", "11"),
+        start_period: new Date("2025", "2"),
         end_period: new Date(),
         location: "Rexburg, ID",
         description: "Collaborated with a team of other techs to resolve technical issues in BYU-I's classrooms. Maintained and replaced hundreds of projectors, monitors, speakers, Crestron touchpanels, and control systems. Maintained and updated spreadsheets that listed the technical specs of each room on campus.",
